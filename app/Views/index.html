@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {font-family: "Lato", sans-serif}
+        .mySlides {display: none}
+    </style>
+    <title>LaCampayne Benom - Event Center, Rentals and Decor</title>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card-2">
+        <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
+        <a href="#works" class="w3-bar-item w3-button w3-padding-large w3-hide-small">WORKS</a>
+        <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+        <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a href="./pictures.html" class="w3-bar-item w3-button">Pictures</a>
+                <a onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Bookings</a>
+                <a onclick="document.getElementById('id01').style.display='block'" class="w3-bar-item w3-button">Prices</a>
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+        <header class="w3-container w3-black">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+        </header>
+        <div class="w3-container">
+            <p>Coming Soon...</p>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="#works" class="w3-bar-item w3-button w3-padding-large">WORKS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">MORE</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center">
+        <img src="../images/116.jpg" style="width:100%; height: 800px;">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Wedding Banquet</h3>
+            <p><b>A banquet after a wedding is a must have!</b></p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="../images/120.jpg" style="width:100%; height: 800px;">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Roses In The Garden</h3>
+            <p><b>Host your Receptions at the park with the right colour.</b></p>
+        </div>
+    </div>
+    <div class="mySlides w3-display-container w3-center">
+        <img src="../images/125.jpg" style="width:100%; height: 800px;">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <h3>Indoor Reception</h3>
+            <p><b>Can design both outdoor and indoor.</b></p>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+        <h2 class="w3-wide">ABOUT</h2>
+        <p class="w3-justify">LaCampayne Benom is a business that deals with hosting your everyday
+        events like Weddings, Birthdays, Meetings etc, at our very own event center with the addition of
+            rentals and decor. We rent out chairs, tables, canopy, chair and table covers, bridal chairs
+        and tables, culinary sets and decorations of a wide variety of colours whether the event is held
+        in our event center or not.</p>
+    </div>
+
+    <!-- OUR WORKS Section -->
+    <div class="w3-black" id="works">
+        <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+            <h2 class="w3-wide w3-center">OUR WORKS</h2>
+            <p class="w3-opacity w3-center"><i>Remember to book your events!</i></p><br>
+
+            <div class="w3-row w3-padding-32">
+                <div class="w3-third">
+                    <img src="../images/110.jpg" class="w3-circle w3-margin-bottom w3-hover-grayscale" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <img src="../images/102.jpg" class="w3-circle w3-margin-bottom w3-hover-grayscale" alt="Random Name" style="width:60%">
+                </div>
+                <div class="w3-third">
+                    <img src="../images/103.jpg" class="w3-circle w3-hover-grayscale" alt="Random Name" style="width:60%">
+                </div>
+            </div>
+
+            <div class="w3-tag w3-border w3-white w3-spin">
+                <a href="./pictures.html" class="w3-bar-item w3-button">View More?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center">CONTACT</h2>
+        <p class="w3-opacity w3-center"><i>Inquiries? Send an email!</i></p>
+        <div class="w3-row w3-padding-32">
+            <div class="w3-col m6 w3-large w3-margin-bottom">
+                <i class="fa fa-map-marker" style="width:30px"></i> No 10 Ethiopia Street,<br>
+                <i class="fa fa-map-marker" style="width:30px"></i> Barnawa, Kaduna South<br>
+                <i class="fa fa-map-marker" style="width:30px"></i> Kaduna, Nigeria.<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +2348023637671<br>
+                <i class="fa fa-phone" style="width:30px"></i> Phone: +2348064777351<br>
+                <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+            </div>
+            <div class="w3-col m6">
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Page Content -->
+</div>
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+
+<script>
+    function myMap() {
+        myCenter=new google.maps.LatLng(41.878114, -87.629798);
+        var mapOptions= {
+            center:myCenter,
+            zoom:12, scrollwheel: false, draggable: false,
+            mapTypeId:google.maps.MapTypeId.ROADMAP
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myCenter
+        });
+        marker.setMap(map);
+    }
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
+</body>
+</html>
